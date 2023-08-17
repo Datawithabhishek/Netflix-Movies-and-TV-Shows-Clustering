@@ -1,38 +1,97 @@
-# NETFLIX-MOVIES-AND-TV-SHOWS-CLUSTERING
+<h1 align='center'> :microscope: Unsupervised-Clustering-Analysis-on-Netflix-Movies-And-TV Shows.</h1>
+
+![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
+
+### This repository contains the and dataset and the research notbook consisting various aproches for clustering movies and tv shows for netflix dataset. The movies and tv shows are present in the dataset which where released during the period of 1925 to 2021.
+![--------------------------------------------------------------------------------------------](https://github.com/andreasbm/readme/blob/master/assets/lines/grass.png)
+
+![N|Solid](https://media.tenor.com/twG41IiAAscAAAAC/no.gif)
 
 
-![Netflix_00](https://user-images.githubusercontent.com/98747222/233456891-3fd94248-a3e5-44c4-a70a-e7efc0475990.jpg)
+# Problem Statement
+The problem at hand involves exploring the Netflix dataset to gain insights into the content available on the platform. The dataset provides information about movies and TV shows, their attributes, and their availability in different countries. By integrating this dataset with external sources such as IMDB ratings and Rotten Tomatoes, we can extract further valuable information.
+
+The specific tasks to be performed in this project include:
+
+- **Exploratory Data Analysis (EDA):** Cleaned the data, unnested the Netflix content and tackled the null/missing values and conduct a thorough analysis of the dataset to uncover trends, patterns, and correlations among different attributes.
+- **Understanding Content Availability:** Determine the types of content available in different countries and identify any variations or preferences.
+- **Analyzing Netflix's Focus:** Investigate whether Netflix has been increasingly focusing on TV shows rather than movies in recent years.
+- **Clustering Similar Content:** Utilize text-based features to cluster similar content, enabling the development of a content-based recommender system.
 
 
-To ensure an optimal user experience and prevent subscriber churn, it is essential for Netflix, the world's leading online streaming service provider with over 220 million subscribers as of 2022, to effectively cluster the shows on their platform..
-
-Table of Content
-Problem Statement
-Objective
-Dataset
-Data Pipeline
-Project Structure
-Conclusion
-Problem Statement
-The goal of this project is to analyze the Netflix catalog of movies and TV shows, which was sourced from the third-party search engine Flixable, and group them into relevant clusters. This will aid in enhancing the user experience and prevent subscriber churn for the world's largest online streaming service provider, Netflix, which currently boasts over 220 million subscribers as of 2022-Q2. The dataset, which includes movies and TV shows as of 2019, will be analyzed to uncover new insights and trends in the rapidly growing world of streaming entertainment.
-
-Objective
-The objective of this project is to organize the Netflix shows into distinct clusters, where the shows within a cluster are alike and the shows in different clusters are dissimilar to one another.
-
-Dataset
-The dataset used in this project is sourced from Flixable, a third-party Netflix search engine. The data includes information on all movies and TV shows available on the streaming platform as of 2019, with a total of 7787 records and 12 attributes. Each attribute provides specific information about the movie or TV show. For more information on the dataset
-
-Data Pipeline
-Know Your Data: The first step in this project was to examine the various features of the dataset, understand the structure of the data and identify any patterns or trends. We looked at the shape of the data, the data types of each feature, and a statistical summary.
-Exploratory Data Analysis: We conducted an exploratory analysis of the data to identify patterns and dependencies, and to draw conclusions that would be useful for further processing.
-Data Cleaning: We checked for duplicated values in the dataset and then addressed any null values and outliers by imputing empty strings and dropping some of the null rows.
-Textual Data Preprocessing: We used techniques such as stop word removal, punctuation removal, conversion to lowercase, stemming, tokenization, and word vectorization to prepare the textual data for clustering. We also used Principal Component Analysis (PCA) to handle the curse of dimensionality.
-Cluster Implementation: We used K-Means and Agglomerative Hierarchical clustering algorithms to cluster the movies and determine the optimal number of clusters.
-Content-Based Recommendation System: We built a content-based recommendation system using the similarity matrix obtained from cosine similarity, which will provide the user with 10 recommendations based on the type of movie/show they have watched.
 
 
-Conclusion
-In this project, we tackled a text clustering problem in which we had to categorize and group Netflix shows into specific clusters in such a way that shows in the same cluster are similar to one another and shows in different clusters are not.
+
+##  💾 Project Files Description
+
+<p>This Project includes :-
+  <li>Google Colab NoteBook</li>
+  <li>Project Summary (with the GitHub Repo link inside)</li>
+  <li>Presentation Video</li>
+</p>
+
+
+### Input Files:
+  <li><b>NETFLIX MOVIES AND TV SHOW CLUSTERING.csv</b> - Contains the records of movies and tv show released during 1925 to 2021.</li>
+
+### Data Source:
+- [Dataset](https://drive.google.com/file/d/1gt4yzUiQ1IB8kxB5YglidWtyqn_xraWG/view?usp=sharing) - Dataset taken from AlmaBetter
+
+
+## 🗺️ Dataset Description
+
+The dataset contains 7,787 records and 11 features, including information about movies and TV shows from 1925 to 2021. The dataset includes two types of content: movies (71.1%) and TV shows (28.3%). The most frequent rating is TV-MA (Mature Audience only) followed by Teen and older. The highest number of content was added in 2019. The highest number of content is available in the months of October, December, and January.
+
+
+## 🔎 Key Findings
+
+>* Most of the content is of the type of movie (71.1%).
+>* The highest number of aquitted/created content was added in 2019.
+>* The highest number of content is available in the months of October, December, and January.
+>* The top genres where most of the movies and TV shows are listed are Dramas, International Movies, and Comedies.
+>* The optimal number of clusters for the dataset is four.
+>* The developed recommendation system is expected to improve the user experience and reduce subscriber churn for Netflix, which currently has over 220 million subscribers.
+
+## 🛠️ Builds with
+
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+
+![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+
+![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
+
+![Seaborn](https://img.shields.io/badge/Seaborn-blue?style=for-the-badge&logo=Seaborn)
+
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
+
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+
+![GoogleColab](https://img.shields.io/badge/GoogleColab-orange?style=for-the-badge&logo=GoogleColab)
+
+
+
+
+
+
+# Project Summary
+The aim of this project is to analyze the Netflix dataset, which includes information on movies and TV shows available on the platform until 2019. With over 220 million subscribers, Netflix is the world's largest online streaming service provider. By analyzing and clustering the content, we can enhance the user experience through a personalized recommendation system, potentially reducing subscriber churn.
+
+The project follows a step-by-step process, as outlined below:
+
+- **Handling Missing Values:** Address any null or missing values present in the dataset.
+- **Dealing with Nested Columns:** Process nested columns such as director, cast, listed_in, and country to facilitate clear visualization and analysis.
+- **Rating Binning:** Categorize ratings into appropriate categories, including adult, children's, family-friendly, and not rated content.
+- **Exploratory Data Analysis (EDA):** Perform in-depth EDA on various attributes, uncovering valuable findings to aid in churn prevention.
+- **Cluster Creation:** Create clusters using attributes such as director, cast, country, genre, rating, and description. Tokenize, preprocess, and vectorize the attribute values using TF-IDF vectorizer.
+- **Clustering Algorithms:** Employ K-Means Clustering and Agglomerative Hierarchical Clustering algorithms to construct two distinct types of clusters. Determine the optimal number of clusters using methods like the Elbow method and Dendrogram.
+
+
+
+
 
 
 
